@@ -1,3 +1,4 @@
+from modules.models import ClipSource
 
 import unittest
 import os
@@ -27,7 +28,7 @@ class TestDataModels(unittest.TestCase):
 
     def test_feature_vector(self):
         from modules.models import FeatureVector
-        fv = FeatureVector(vod_id="v1", timestamp=30.0, audio_energy=0.8, audio_spike=True, motion_intensity=0.5, scene_change=False, chat_density=0.6, emote_density=0.3, semantic_score=0.7)
+        fv = FeatureVector(vod_id="v1", timestamp=30.0, audio_energy=0.8, audio_spike=True, motion_intensity=0.5, scene_change=False, chat_hype=0.6, semantic_importance=0.7)
         fv.validate()
 
     def test_clip_candidate(self):
@@ -39,7 +40,7 @@ class TestDataModels(unittest.TestCase):
 
     def test_voice_triggered_clip(self):
         from modules.models import ClipCandidate
-        cc = ClipCandidate(vod_id="v1", start=50.0, end=80.0, score=1.0, source="voice_trigger", reason="clip that")
+        cc = ClipCandidate(vod_id="v1", start=50.0, end=80.0, score=1.0, source=ClipSource.VOICE_TRIGGER, reason="clip that")
         self.assertTrue(cc.is_voice_triggered)
         self.assertEqual(cc.duration, 30.0)
 
