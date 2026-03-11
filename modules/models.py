@@ -47,6 +47,8 @@ class TranscriptSegment:
         assert 0 <= self.start < self.end
         assert 0.0 <= self.confidence <= 1.0
         assert self.text.strip()
+    @property
+    def duration(self): return self.end - self.start
 
 @dataclass
 class FeatureVector:

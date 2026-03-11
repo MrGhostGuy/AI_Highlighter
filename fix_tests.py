@@ -1,0 +1,10 @@
+with open('modules/models.py','r') as f: m=f.read()
+m=m.replace('        assert self.text.strip()','        assert self.text.strip()\n    @property\n    def duration(self): return self.end - self.start')
+with open('modules/models.py','w') as f: f.write(m)
+print('models fixed')
+with open('tests/test_system.py','r') as f: t=f.read()
+t=t.replace('chat_density=0.6, emote_density=0.3, semantic_score=0.7','chat_hype=0.6, semantic_importance=0.7')
+t=t.replace('source="voice"','source=ClipSource.VOICE_TRIGGER')
+if 'ClipSource' not in t: t='from modules.models import ClipSource\n'+t
+with open('tests/test_system.py','w') as f: f.write(t)
+print('tests fixed')
