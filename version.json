@@ -1,0 +1,35 @@
+
+{
+    "name": "AI Highlighter System",
+    "version": "2.0.0",
+    "build_date": "2026-03-11",
+    "description": "Automated Twitch VOD highlight detection and vertical clip generation",
+    "modules": [
+        "transcription",
+        "voice_clipping",
+        "feature_extraction",
+        "scoring",
+        "llm_semantics",
+        "rendering",
+        "api",
+        "dashboard",
+        "pipeline",
+        "config",
+        "logging_config",
+        "optimization"
+    ],
+    "features": [
+        "Whisper-based transcription",
+        "Voice-triggered clip detection",
+        "Multi-feature extraction (audio, visual, chat, semantic)",
+        "Weighted highlight scoring",
+        "LLM-powered titles and summaries",
+        "9:16 vertical rendering with captions",
+        "FastAPI REST endpoints",
+        "Futuristic dashboard with mobile access",
+        "QR code sharing",
+        "Dynamic clip lengths (30-120s)",
+        "Deterministic pipeline",
+        "Comprehensive test suite"
+    ]
+}
