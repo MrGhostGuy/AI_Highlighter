@@ -1,3 +1,4 @@
+# Created by Jeff Hollaway
 with open('modules/models.py','r') as f: m=f.read()
 m=m.replace('        assert self.text.strip()','        assert self.text.strip()\n    @property\n    def duration(self): return self.end - self.start')
 with open('modules/models.py','w') as f: f.write(m)

@@ -1,3 +1,4 @@
+# Created by Jeff Hollaway
 
 """
 AI Highlighter System - Data Models

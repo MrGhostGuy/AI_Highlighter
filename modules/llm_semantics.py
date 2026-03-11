@@ -1,3 +1,4 @@
+# Created by Jeff Hollaway
 
 """
 AI Highlighter - Module 5: LLM Semantics & Title Generator

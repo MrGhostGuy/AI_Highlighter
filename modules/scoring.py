@@ -1,3 +1,4 @@
+# Created by Jeff Hollaway
 
 """
 AI Highlighter - Module 4: Highlight Scoring Engine

@@ -1,3 +1,4 @@
+# Created by Jeff Hollaway
 """
 AI Highlighter - Delivery & API Layer
 Full Twitch API integration with real search, VOD analysis, and AI features.

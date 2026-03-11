@@ -1,3 +1,4 @@
+# Created by Jeff Hollaway
 
 """
 AI Highlighter - Module 6: Vertical Rendering Engine

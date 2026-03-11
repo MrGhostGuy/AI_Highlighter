@@ -1,3 +1,4 @@
+# Created by Jeff Hollaway
 html = r'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -110,7 +111,7 @@ document.getElementById("analyzeBtn").disabled=true;
 document.getElementById("progressSection").style.display="block";
 document.getElementById("progressSection").className="progress-section analyzing";
 log("Starting analysis of VOD: "+selectedVod.vod_id);
-try{const r=await fetch("/api/v1/vods/analyze",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({vod_url:"https://twitch.tv/videos/"+selectedVod.vod_id,username:document.getElementById("username").value.trim()})});
+try{const r=await fetch("/api/v1/vods/analyze",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({twitch_vod_url:"https://twitch.tv/videos/"+selectedVod.vod_id,username:document.getElementById("username").value.trim()})});
 const d=await r.json();currentJobId=d.job_id;log("Job created: "+currentJobId);pollJob();
 }catch(e){log("Error: "+e.message)}}
 async function pollJob(){

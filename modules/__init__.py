@@ -1,3 +1,4 @@
+# Created by Jeff Hollaway
 
 from modules.config import PipelineConfig
 from modules.pipeline import HighlighterPipeline

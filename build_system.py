@@ -1,3 +1,4 @@
+# Created by Jeff Hollaway
 ﻿import os
 base = r"C:\Users\kency\AI_Highlighter"
 def w(p, c):

@@ -1,3 +1,4 @@
+# Created by Jeff Hollaway
 
 #!/usr/bin/env python3
 """AI Highlighter System v2.0 - Main Entry Point

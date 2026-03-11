@@ -1,4 +1,3 @@
-
 {
     "name": "AI Highlighter System",
     "version": "2.0.0",
@@ -31,5 +30,6 @@
         "Dynamic clip lengths (30-120s)",
         "Deterministic pipeline",
         "Comprehensive test suite"
-    ]
+    ],
+    "created_by": "Jeff Hollaway"
 }
